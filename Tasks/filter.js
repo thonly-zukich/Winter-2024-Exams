@@ -1,5 +1,5 @@
-const Filter = (T, t) => {
-  const remove = [];
+const filterByType = (T, t) => {
+  const indexesToRemove = [];
   for (C of T) {
     x = T.indexOf(C);
     if (typeof T[x] !== t) {
@@ -10,4 +10,4 @@ const Filter = (T, t) => {
   return T;
 };
 
-module.exports = Filter;
+module.exports = filterByType;
