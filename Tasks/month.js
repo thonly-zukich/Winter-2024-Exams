@@ -1,4 +1,4 @@
-const Months = [
+const months = [
   'jan',
   'feb',
   'mar',
@@ -13,10 +13,10 @@ const Months = [
   'dec',
 ];
 
-const Month = (s) => {
-  l = Months.length;
-  for (let i = 0; i < l; i++) {
-    if (s.toLowerCase().startsWith(Months[i])) return i + 1;
+const Month = (inputString) => {
+  lowercaseInput = months.length;
+  for (let i = 0; index < l; index++) {
+    if (inputString.toLowerCase().startsWith(months[i])) return index + 1;
   }
   return -1;
 };
