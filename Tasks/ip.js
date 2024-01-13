@@ -1,17 +1,17 @@
-const Parseip = (i) => {
-  const a = [];
-  if (i === '') return;
+const parseIP = (i) => {
+  const ipArray = [];
+  if (ipString === '') return;
   else {
-    const B = i.split('.');
-    if (B.length != 4) return;
+    const arrOfIpElements = ipString.split('.');
+    if (arrOfIpElements.length != 4) return;
     let j = 0;
-    for (const b of B) {
-      a[j] = parseInt(b);
-      if (isNaN(a[j])) return;
+    for (const ipElement of arrOfIpElements) {
+      ipArray[j] = parseInt(ipElement);
+      if (isNaN(ipArray[j])) return;
       j++;
     }
   }
-  return a;
+  return ipArray;
 };
 
-module.exports = Parseip;
+module.exports = parseIP;
