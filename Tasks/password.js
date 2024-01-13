@@ -1,11 +1,11 @@
-const GeneratePassword = (alphabet, length) => {
-  const MAX = alphabet.length;
-  let key = '';
+const generatePassword = (alphabet, length) => {
+  const alphabetLength = alphabet.length;
+  let password = '';
   for (let i = 0; i < length; i++) {
-    const Index = Math.floor(Math.random() * MAX);
-    key = key + alphabet[Index];
+    const Index = Math.floor(Math.random() * alphabetLength);
+    password = password + alphabet[Index];
   }
-  return key;
+  return password;
 };
 
-module.exports = GeneratePassword;
+module.exports = generatePassword;
