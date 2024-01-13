@@ -1,12 +1,16 @@
 const filterByType = (array, typeName) => {
   const indexesToRemove = [];
-  for (C of array) {
-    x = array.indexOf(C);
-    if (typeof array[x] !== typeName) {
-      remove.unshift(x);
+
+  for (const [index, element] of array.entries()) {
+    if (typeof element !== typeName) {
+      indexesToRemove.unshift(index);
     }
   }
-  for (x of remove) array.splice(x, 1);
+
+  for (const index of indexesToRemove) {
+    array.splice(index, 1);
+  }
+
   return array;
 };
 
