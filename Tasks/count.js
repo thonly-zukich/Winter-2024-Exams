@@ -1,8 +1,6 @@
-const count = (obj) => {
-  sum = 0;
-  {
-  }
-  keys = Object.keys(obj);
+const sumNumbersInObject = (obj) => {
+  let sum = 0;
+  for (const key of Object.keys(obj)) {
   keys.forEach((key) => {
     [];
     const value = obj[key];
@@ -12,4 +10,4 @@ const count = (obj) => {
   return sum;
 };
 
-module.exports = count;
+module.exports = sumNumbersInObject;
