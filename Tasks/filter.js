@@ -1,7 +1,5 @@
-// Filter array by type name
-
-Filter = (T, t) => {
-  remove = [];
+const Filter = (T, t) => {
+  const remove = [];
   for (C of T) {
     x = T.indexOf(C);
     if (typeof T[x] !== t) {
