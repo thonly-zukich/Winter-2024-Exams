@@ -1,8 +1,10 @@
-const getRandomInt = (minRange, maxRange) => {
-  if (maxRange === undefined) {
-    maxRange = minRange;
-    return Math.floor(Math.random() * (maxRange + 1));
+const getRandomInt = (min, max) => {
+  if (max === undefined) {
+    max = min;
+    return Math.floor(Math.random() * (max + 1));
   } else {
-    return minRange + Math.floor(Math.random() * (maxRange - minRange + 1));
+    return min + Math.floor(Math.random() * (max - min + 1));
   }
 };
+
+module.exports = getRandomInt;
