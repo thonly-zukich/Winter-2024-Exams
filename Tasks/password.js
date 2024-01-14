@@ -11,3 +11,5 @@ const generatePassword = (alphabet, length) => {
 
   return password;
 };
+
+module.exports = generatePassword;
